@@ -40,7 +40,7 @@ date <- c(rep("20140523",12),rep("20140527",12),rep("20140531",12))
 #連結
 D4 <- cbind(group,condition,date,D3)
 
-#groupごとで平均、標準誤差を計算
+#groupごとで平均、標準偏差を計算
 D4_mean_sd <- D4 %>% group_by(group,condition,date,geneID) %>% summarize(mean = mean(Counts),sd = sd(Counts))
 
 #作図
