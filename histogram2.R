@@ -1,3 +1,4 @@
+library("ggplot2")
 df <- read.delim("hist2.txt", header=T)
 g <- NULL
 g <- ggplot(df, aes(x = Value, fill=Class))
