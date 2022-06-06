@@ -14,7 +14,7 @@ library(ggforce)
 #packageVersion("")
 
 
-data <- read.table(file.choose(),header=T,check.names=F,row.names=1) #データの読み込み
+data <- read.delim("test_NMDS.txt",header=T,check.names=F,row.names=1) #データの読み込み
 dim(data) #行列数を確認
 
 #低カウント遺伝子を除去する(一般的に10カウント以下はノイズとして扱われている)
